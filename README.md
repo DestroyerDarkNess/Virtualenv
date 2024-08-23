@@ -34,11 +34,11 @@ In short, it allows you to create already virtualized Python projects. **Easy to
 
 ## Importance of Virtualization in Python Projects
 
-##### **Aislamiento de dependencia**
+##### **Dependency isolation**
 - Avoids conflicts between versions of packages used in different projects.
 - Allows each project to have its own versions of dependencies without interference.
 
-##### **Coherencia del desarrollo**
+##### **Coherence of development**
 - Ensures that the development environment is consistent between different machines and configurations.
 - Facilitates replication of the development environment in production or in other work environments.
 
