@@ -15,7 +15,11 @@ In short, it allows you to create already virtualized Python projects. **Easy to
 
 ![Animation (-2)](https://github.com/user-attachments/assets/0532d8da-125b-4dfa-b57d-aba144bed085)
 
-5) Your Project is now virtualized.
+# Deploy On WSL
+
+3) Open a terminal and run > `.\deployWSL.ps1`
+
+![Animation (-3)](https://github.com/user-attachments/assets/027141f0-a685-41d4-b2cc-9fa8fdd05be0)
 
 # Summary
 
