@@ -4,7 +4,7 @@ In short, it allows you to create already virtualized Python projects. **Easy to
 
 # How to use
 
-1) Download [virtualenv.bat](https://github.com/DestroyerDarkNess/Virtualenv/releases/download/1.0/Virtualenv.bat) and save it in your python projects folder.
+1) Download [virtualenv.bat](https://github.com/DestroyerDarkNess/Virtualenv/releases/download/1.1/Virtualenv.bat) and save it in your python projects folder.
 
 2) Creating a Project using **virtualenv.bat** :
    > virtualenv.bat "YourProyectName"
