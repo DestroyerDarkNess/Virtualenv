@@ -1,5 +1,23 @@
 # Virtualenv
 This project provides a batch script **(virtualenv.bat)** designed to automate the creation of virtual environments in Python and the initial configuration of projects.
+In short, it allows you to create already virtualized Python projects. **Easy to create and use.**
+
+# How to use
+
+1) Download [virtualenv.bat]() and save it in your python project folder.
+
+2) Creating a Project using **virtualenv.bat** :
+   > virtualenv.bat "YourProyectName"
+   
+![Animation (-1)](https://github.com/user-attachments/assets/b7b4e7cc-53ed-4acf-8519-392083721831)
+
+3) Open a terminal and run > `.\Run.ps1`
+
+![Animation (-2)](https://github.com/user-attachments/assets/0532d8da-125b-4dfa-b57d-aba144bed085)
+
+5) Your Project is now virtualized.
+
+# Summary
 
 ## What is Project Virtualization in Python?
 
