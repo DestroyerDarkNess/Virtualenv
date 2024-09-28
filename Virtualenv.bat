@@ -33,21 +33,40 @@ mkdir "%PROJECT_PATH%"
 REM Change directory to the project folder
 cd /d "%PROJECT_PATH%"
 
-REM Create a virtual environment named "venv" inside the project folder
-python -m venv venv
+REM Create a virtual environment named ".venv" inside the project folder
+python -m venv .venv
 
-REM Create the main.py file with the initial code
+REM Create the .vscode folder
+mkdir .vscode
+
+REM Create the launch.json file inside .vscode
+(
+    echo { 
+    echo     "version": "0.2.0", 
+    echo     "configurations": [ 
+    echo         { 
+    echo             "name": "Python Debugger: Current File", 
+    echo             "type": "debugpy", 
+    echo             "request": "launch", 
+    echo             "program": "${file}", 
+    echo             "console": "externalTerminal" 
+    echo         } 
+    echo     ] 
+    echo }
+) > ".vscode\launch.json"
+
+REM Crear el archivo main.py con el código inicial
 (
     echo # Create By https://github.com/DestroyerDarkNess
     echo print^('Hello world, from a virtualized project'^)
 ) > "main.py"
 
-REM Create empty requirements.txt and README.md files
+REM Crear archivos requirements.txt y README.md vacíos
 echo.> "requirements.txt"
 echo.> "README.md"
 
 REM Create a run.ps1 file to activate the virtual environment
-echo $venvPath = ".\venv\Scripts\Activate.ps1" > "run.ps1"
+echo $venvPath = ".\.venv\Scripts\Activate.ps1" > "run.ps1"
 echo if (Test-Path $venvPath) { . $venvPath } else { Write-Error "Virtual environment not found." } >> "run.ps1"
 echo Clear-Host >> "run.ps1"
 
